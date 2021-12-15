@@ -27,3 +27,7 @@ openAIPFilter.input.addEventListener("click", ToggleOpenAIP);
 filtersTable.appendChild(openAIPFilter.line);
 
 addonFilters["openAip"] = openAIPFilter;
+
+if(window.location.search.search("browser") != -1){
+    resizeElementAndChilds(filtersTable);
+}

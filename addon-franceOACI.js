@@ -26,3 +26,7 @@ franceOACIFilter.input.addEventListener("click", ToggleFranceOACI);
 filtersTable.appendChild(franceOACIFilter.line);
 
 addonFilters["franceOACI"] = franceOACIFilter;
+
+if(window.location.search.search("browser") != -1){
+    resizeElementAndChilds(filtersTable);
+}
